@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monad Testnet Faucet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="walletButton" class="wallet-btn">Connect Wallet</button>
+    </header>
+    <div class="container">
+        <h1>Monad Testnet Faucet</h1>
+        <div class="faucet-form">
+            <input type="text" id="walletAddress" placeholder="Connect your wallet" readonly />
+            <button id="sendButton">Send 0.5 MON</button>
+        </div>
+        <div id="faucetBalance" class="faucet-balance">Faucet Balance: --</div>
+        <div id="message" class="message"></div>
+    </div>
+    <div class="warning">
+        <strong>This faucet is intended for Monad testnet use only.</strong><br>
+        Tokens dispensed here have no real-world value and are strictly for development and testing purposes.<br>
+        Do not send real assets to this address. Misuse may lead to temporary blacklisting.<br>
+        You should have less than 5 MONAD in your balance and it will cost you 0.0027 MONAD to claim.
+    </div>
+    <footer>
+        Send your extra Monad tokens to <span id="contractAddress">0x9D8fED8E3D22adF274186e7d4c6eCEeD8E24dc1F</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
